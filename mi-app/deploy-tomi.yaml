@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: joaquinsolari/memegenerator:v1
+        image: joaquinsolari/app-juaco:4
         ports:
         - containerPort: 80
