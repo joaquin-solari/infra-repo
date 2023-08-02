@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/joaquinsolari/infra-repo.git
+    repoURL: https://github.com/joaquin-solari/infra-repo.git
     path: mi-app
     targetRevision: HEAD
   destination:
