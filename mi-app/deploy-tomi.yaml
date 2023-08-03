@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: joaquinsolari/app-juaco:31
+        image: joaquinsolari/app-juaco:7
         ports:
         - containerPort: 80
