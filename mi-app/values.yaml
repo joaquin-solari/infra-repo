@@ -2,7 +2,12 @@ appName: nginx
 
 deployment:
     image:
+<<<<<<< HEAD
         owner: joaquinsolari
         repository: app-juaco
         tag: 11
+=======
+        repository: joaquinsolari
+        tag: 18
+>>>>>>> refs/remotes/origin/main
     replicaCount: 1
