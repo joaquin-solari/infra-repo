@@ -4,5 +4,5 @@ deployment:
     image:
         owner: joaquinsolari
         repository: app-juaco
-        tag: 11
+        tag: 20
         replicaCount: 1
