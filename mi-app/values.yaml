@@ -2,6 +2,7 @@ appName: nginx
 
 deployment:
     image:
-        repository: joaquinsolari
-        tag:17
+        owner: joaquinsolari
+        repository: app-juaco
+        tag: 11
     replicaCount: 1
