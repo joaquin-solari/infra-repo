@@ -5,17 +5,17 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 5
+  replicas: {{ .Values.deployment.replicaCount }}
   selector:
     matchLabels:
       app: nginx
   template:
     metadata:
       labels:
-        app: nginx
+        app: {{ .Values.appName }}
     spec:
       containers:
-      - name: nginx
-        image: joaquinsolari/app-juaco:11
+      - name: {{ .Values.appName }}
+        image: {{ .Values.deployment.image.owner }}/{{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}
         ports:
         - containerPort: 80

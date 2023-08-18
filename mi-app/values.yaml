@@ -1,0 +1,7 @@
+appName: nginx
+
+deployment:
+    image:
+        repository: joaquinsolari
+        tag: 11
+    replicaCount: 1
