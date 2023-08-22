@@ -12,7 +12,8 @@ spec:
     targetRevision: HEAD
     helm:
       releaseName: meme-app
-      values: environments/values-prod.yaml
+      valueFiles: 
+         - environments/values-prod.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app-prod
