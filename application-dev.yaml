@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-application-dev
@@ -12,8 +12,7 @@ spec:
     targetRevision: HEAD
     helm:
       releaseName: meme-app
-      values:
-        - mi-app/environments/values-dev.yaml
+      values: mi-app/environments/values-dev.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app-dev

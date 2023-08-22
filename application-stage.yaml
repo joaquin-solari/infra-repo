@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-application-stage
@@ -12,11 +12,10 @@ spec:
     targetRevision: HEAD
     helm:
       releaseName: meme-app
-      values:
-        - mi-app/environments/values-stage.yaml
+      values: mi-app/environments/values-stage.yaml
   destination:
     server: https://kubernetes.default.svc
-      namespace: my-app-stage
+    namespace: my-app-stage
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
