@@ -1,0 +1,5 @@
+appName: nginx
+
+deployment:
+    replicaCount: 3
+
