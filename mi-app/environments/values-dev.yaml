@@ -3,3 +3,4 @@ appName: nginx
 deployment:
     replicaCount: 1
     nodePort: 30080
+    environment: "dev"  
