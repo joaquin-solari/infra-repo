@@ -2,4 +2,4 @@ appName: nginx
 
 deployment:
     replicaCount: 2
-
+    nodePort: 30083

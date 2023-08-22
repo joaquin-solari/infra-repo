@@ -6,10 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    chart: meme-app
     repoURL: https://github.com/joaquin-solari/infra-repo.git
-    path: mi-app
-    targetRevision: HEAD
+    path: mi-app  
     helm:
       releaseName: meme-app
       valueFiles:
