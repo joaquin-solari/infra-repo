@@ -12,7 +12,7 @@ spec:
     targetRevision: HEAD
     helm:
       releaseName: meme-app
-      values: mi-app/environments/values-stage.yaml
+      values: environments/values-stage.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app-stage
