@@ -3,4 +3,6 @@ appName: nginx
 deployment:
     replicaCount: 3
     nodePort: 30081
-    environment: "prod"  
+    environment: "prod" 
+    image:
+       tag: 20
