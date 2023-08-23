@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/joaquin-solari/db-repo.git
-    path: manifests
+    repoURL: https://github.com/joaquin-solari/infra-repo.git
+    path: database
   destination:
     server: https://kubernetes.default.svc
     namespace: app-db
