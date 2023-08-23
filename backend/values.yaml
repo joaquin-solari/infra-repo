@@ -3,5 +3,5 @@ appName: nodejs
 deployment:
     image:
         owner: joaquinsolari
-        repository: app-back-repo
+        repository: app-juaco-backend
         tag: latest
