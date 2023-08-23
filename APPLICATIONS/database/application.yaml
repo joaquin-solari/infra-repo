@@ -1,20 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-backend-prod
+  name: argo-application-db
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/joaquin-solari/infra-repo.git
-    path: backend/mi-app-back
-    helm:
-      releaseName: meme-app
-      valueFiles: 
-         - environments/values-prod.yaml
+    repoURL: https://github.com/joaquin-solari/db-repo.git
+    path: manifests
   destination:
     server: https://kubernetes.default.svc
-    namespace: my-app-prod
+    namespace: app-db
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

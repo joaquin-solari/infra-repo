@@ -1,20 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-backend-dev
+  name: argo-frontend-stage
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/joaquin-solari/infra-repo.git
-    path: backend/mi-app-back  
+    path: frontend  
     helm:
-      releaseName: meme-app
       valueFiles:
-         - environments/values-dev.yaml
+        - environments/values-stage.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: my-app-dev
+    namespace: my-app-stage
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
