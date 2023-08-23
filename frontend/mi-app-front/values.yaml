@@ -1,0 +1,7 @@
+appName: nginx
+
+deployment:
+    image:
+        owner: joaquinsolari
+        repository: app-juaco
+        replicaCount: 1
