@@ -1,7 +1,7 @@
-appName: nginx
+appName: nodejs
 
 deployment:
     image:
         owner: joaquinsolari
-        repository: app-juaco-back
-        replicaCount: 1
+        repository: app-back-repo
+        tag: latest

@@ -1,8 +1,5 @@
-appName: nginx
+appName: nodejs
 
 deployment:
     replicaCount: 3
-    nodePort: 30081
     environment: "prod" 
-    image:
-       tag: 20
