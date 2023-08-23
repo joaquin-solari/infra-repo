@@ -3,5 +3,5 @@ appName: nginx
 deployment:
     image:
         owner: joaquinsolari
-        repository: app-juaco
+        repository: app-juaco-back
         replicaCount: 1

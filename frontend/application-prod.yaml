@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-application-prod
+  name: argo-frontend-prod
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/joaquin-solari/infra-repo.git
-    path: mi-app
+    path: frontend/mi-app-front
     helm:
       releaseName: meme-app
       valueFiles: 
