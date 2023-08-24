@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-deployment
+  name: nodejs-deployment-{{.Values.deployment.environment}}
   labels:
     app: {{ .Values.appName }}
 spec:
