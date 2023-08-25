@@ -1,16 +1,16 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: nginx-ingress-{{.Values.deployment.environment}}
-spec:
-  rules:
-  - host: mi-app.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: nginx-service-{{.Values.deployment.environment}}
-            port:
-              number: 80
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: nginx-ingress-{{.Values.deployment.environment}}
+# spec:
+#   rules:
+#   - host: mi-app.com
+#     http:
+#       paths:
+#       - path: /
+#         pathType: Prefix
+#         backend:
+#           service:
+#             name: nginx-service-{{.Values.deployment.environment}}
+#             port:
+#               number: 80
