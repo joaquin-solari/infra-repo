@@ -1,7 +1,7 @@
 appName: nginx
 
 deployment:
-    replicaCount: 3
+    replicaCount: 1
     nodePort: 30081
     environment: "prod" 
     image:
