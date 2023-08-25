@@ -1,7 +1,7 @@
 appName: nginx
 
 deployment:
-    replicaCount: 2
+    replicaCount: 1
     nodePort: 30083
     environment: "stage"
     image:
