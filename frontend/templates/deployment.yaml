@@ -25,4 +25,4 @@ spec:
       volumes:
         - name: nginx-conf-configmap
           configMap:
-            name: nginx-conf-configmap
+            name: nginx-conf-configmap-{{.Values.deployment.environment}}
