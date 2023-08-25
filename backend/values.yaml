@@ -4,4 +4,4 @@ deployment:
     image:
         owner: joaquinsolari
         repository: app-juaco-backend
-        tag: latest
+        tag: 1
