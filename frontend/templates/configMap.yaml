@@ -1,7 +1,7 @@
-apiVersion: v1
+data       # volumes:       #   - name: redis-data       #     emptyDir: {}apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginx-conf-configmap
+  name: nginx-conf-configmap-{{.Values.deployment.environment}}
 data:
   nginx.conf: |
     server {
