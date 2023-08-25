@@ -3,7 +3,6 @@ kind: ConfigMap
 metadata:
   name: nginx-conf-configmap
 data:
- # nginx.conf: {{ .Values.configmap.nginxConf | toYaml | indent 1 }}
   nginx.conf: |
     server {
         listen       80;
