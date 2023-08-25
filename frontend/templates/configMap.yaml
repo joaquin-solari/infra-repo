@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: front-configmap-{{.Values.deployment.environment}}
+  name: nginx-conf-configmap-{{.Values.deployment.environment}}
 data:
   nginx.conf: {{ .Values.configmap.nginxConf | toYaml | indent 1 }}
 # data:
