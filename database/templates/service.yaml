@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis-service
+  name: db-service-{{.Values.deployment.environment}}
 spec:
   selector:
-    app: redis
+    app: {{ .Values.appName }}
   ports:
     - protocol: TCP
       port: 6379

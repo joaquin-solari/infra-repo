@@ -1,0 +1,6 @@
+appName: database
+
+deployment:
+    replicaCount: 1
+    environment: "dev"
+    tag: 1

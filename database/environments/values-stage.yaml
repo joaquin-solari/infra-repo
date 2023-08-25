@@ -1,0 +1,6 @@
+appName: database
+
+deployment:
+    replicaCount: 2
+    environment: "stage"
+    tag: 1

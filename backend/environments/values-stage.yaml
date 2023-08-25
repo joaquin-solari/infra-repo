@@ -1,6 +1,8 @@
-appName: nodejs
+appName: backend
 
 deployment:
     replicaCount: 2
     environment: "stage"
-
+    tag: 1
+    env:
+      redis_host: db-service-stage.frontend-stage

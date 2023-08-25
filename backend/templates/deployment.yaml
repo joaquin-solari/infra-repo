@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs-deployment-{{.Values.deployment.environment}}
+  name: back-deployment-{{.Values.deployment.environment}}
   labels:
     app: {{ .Values.appName }}
 spec:
@@ -19,3 +19,6 @@ spec:
         image: "{{ .Values.deployment.image.owner }}/{{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}"
         ports:
         - containerPort: 80
+        env:
+        - name: REDIS_HOST
+          value: {{ .Values.deployment.env.redis_host }}

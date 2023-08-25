@@ -1,5 +1,8 @@
-appName: nodejs
+appName: backend
 
 deployment:
     replicaCount: 1
     environment: "dev"
+    tag: 1
+    env:
+      redis_host: db-service-dev.frontend-dev

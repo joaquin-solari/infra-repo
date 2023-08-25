@@ -8,9 +8,12 @@ spec:
   source:
     repoURL: https://github.com/joaquin-solari/infra-repo.git
     path: database
+    helm:
+      valueFiles:
+         - environments/values-prod.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: app-db
+    namespace: db-prod
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

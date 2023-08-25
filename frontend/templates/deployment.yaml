@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment-{{.Values.deployment.environment}}
+  name: front-deployment-{{.Values.deployment.environment}}
   labels:
-    app: nginx
+    app: {{ .Values.appName }}
 spec:
   replicas: {{ .Values.deployment.replicaCount }}
   selector:
     matchLabels:
-      app: nginx
+      app: {{ .Values.appName }}
   template:
     metadata:
       labels:
