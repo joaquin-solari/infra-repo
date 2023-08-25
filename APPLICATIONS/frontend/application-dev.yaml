@@ -13,7 +13,7 @@ spec:
          - environments/values-dev.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: my-app-dev
+    namespace: frontend-dev
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
