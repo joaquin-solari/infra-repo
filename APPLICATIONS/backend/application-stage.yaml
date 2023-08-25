@@ -13,7 +13,7 @@ spec:
         - environments/values-stage.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: backend-prod
+    namespace: backend-stage 
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
