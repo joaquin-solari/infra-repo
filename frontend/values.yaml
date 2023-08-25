@@ -1,4 +1,4 @@
-appName: nginx
+appName: frontend
 
 deployment:
     image:
