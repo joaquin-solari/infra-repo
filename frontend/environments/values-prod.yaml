@@ -4,6 +4,7 @@ deployment:
     replicaCount: 1
     nodePort: 30081
     environment: "prod" 
+    path: /prod
     image:
        tag: 18
 

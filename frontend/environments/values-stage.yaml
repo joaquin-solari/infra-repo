@@ -4,6 +4,7 @@ deployment:
     replicaCount: 1
     nodePort: 30083
     environment: "stage"
+    path: /stage
     image:
        tag: 18
 
