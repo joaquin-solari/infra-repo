@@ -5,7 +5,7 @@ deployment:
     nodePort: 30080
     environment: "dev"
     image:
-       tag: 14
+       tag: 16
 configmap: 
   nginxConf: |-
     server {
