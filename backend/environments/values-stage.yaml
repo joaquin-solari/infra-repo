@@ -4,7 +4,7 @@ deployment:
     replicaCount: 2
     environment: "stage"
     image:
-       tag: 4
+       tag: 5
     env:
       redis_host: db-service-stage.db-stage
  
