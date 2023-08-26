@@ -7,7 +7,7 @@ spec:
   - host: mi-app.com
     http:
       paths:
-      - path: {{.Values.deployment.path}}
+      - path: /{{.Values.deployment.environment}}(/|$)(.*)
         pathType: Prefix
         backend:
           service:
