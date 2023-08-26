@@ -4,7 +4,7 @@ deployment:
     replicaCount: 1
     nodePort: 30080
     environment: "dev"
-    path: /dev
+    host: "app-dev.com"
     image:
        tag: 18
 configmap: 

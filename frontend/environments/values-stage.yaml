@@ -4,7 +4,7 @@ deployment:
     replicaCount: 1
     nodePort: 30083
     environment: "stage"
-    host: app-stage.com
+    host: "app-stage.com"
     image:
        tag: 18
 

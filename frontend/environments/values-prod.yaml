@@ -4,7 +4,7 @@ deployment:
     replicaCount: 1
     nodePort: 30081
     environment: "prod" 
-    host: app-prod.com
+    host: "app-prod.com"
     image:
        tag: 18
 

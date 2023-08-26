@@ -4,7 +4,7 @@ metadata:
   name: front-ingress-{{.Values.deployment.environment}}
 spec:
   rules:
-  - host: {{.Values.deploymen.host}}
+  - host: {{.Values.deployment.host}}
     http:
       paths:
       - path: /
