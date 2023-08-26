@@ -4,6 +4,6 @@ deployment:
     replicaCount: 3
     environment: "prod" 
     image:
-       tag: 4
+       tag: 5
     env:
       redis_host: db-service-prod.db-prod
