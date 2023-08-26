@@ -4,10 +4,10 @@ metadata:
   name: front-ingress-{{.Values.deployment.environment}}
 spec:
   rules:
-  - host: mi-app.com
+  - host: {{.Values.deploymen.host}}
     http:
       paths:
-      - path: /{{.Values.deployment.environment}}(/|$)(.*)
+      - path: /
         pathType: Prefix
         backend:
           service:
