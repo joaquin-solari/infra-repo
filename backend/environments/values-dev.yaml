@@ -6,4 +6,4 @@ deployment:
     image:
        tag: 1
     env:
-      redis_host: db-service-dev.frontend-dev
+      redis_host: db-service-dev.db-dev
