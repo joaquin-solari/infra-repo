@@ -1,7 +1,7 @@
 appName: frontend
 
 deployment:
-    replicaCount: 1
+    replicaCount: 0
     nodePort: 30083
     environment: "stage"
     host: "app-stage.com"

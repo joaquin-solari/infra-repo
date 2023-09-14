@@ -1,6 +1,6 @@
 appName: database
 
 deployment:
-    replicaCount: 1
+    replicaCount: 0
     environment: "dev"
     tag: 1

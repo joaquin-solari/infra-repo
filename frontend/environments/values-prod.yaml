@@ -1,7 +1,7 @@
 appName: frontend
 
 deployment:
-    replicaCount: 1
+    replicaCount: 0
     nodePort: 30081
     environment: "prod" 
     host: "app-prod.com"
