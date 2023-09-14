@@ -6,7 +6,7 @@ deployment:
     environment: "stage"
     host: "app-stage.com"
     image:
-       tag: 5
+       tag: 7
 
 configmap: 
   nginxConf: |-
