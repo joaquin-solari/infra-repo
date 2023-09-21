@@ -7,7 +7,7 @@ deployment:
     host: "app-stage.com"
     image:
        tag: 20
-
+       
 configmap: 
   nginxConf: |-
     server {
