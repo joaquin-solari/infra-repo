@@ -1,7 +1,7 @@
 appName: backend
 
 deployment:
-    replicaCount: 0
+    replicaCount: 1
     environment: "stage"
     image:
        tag: 5

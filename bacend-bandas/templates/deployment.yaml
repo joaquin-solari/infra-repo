@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-bandas-deployment-{{.Values.deployment.environment}}
+  labels:
+    app: {{ .Values.appName }}
+spec:
+  replicas: {{ .Values.deployment.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.appName }}
+    spec:
+      containers:
+      - name: {{ .Values.appName }}
+        image: "{{ .Values.deployment.image.owner }}/{{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}"
+        ports:
+        - containerPort: 8080

@@ -1,14 +1,14 @@
 appName: frontend
 
 deployment:
-    replicaCount: 0
+    replicaCount: 1
     nodePort: 30080
     environment: "dev"
     host: "app-dev.com"
     image:
-       tag: 19
+       tag: 20
 configmap: 
-  nginxConf: |-
+  nginxConf: |- 
     server {
         listen       80;
         listen  [::]:80;
@@ -21,6 +21,10 @@ configmap:
     
         location /api {
             proxy_pass http://back-service-dev.backend-dev:3000/;
+        }
+
+         location /banda {
+            proxy_pass http://back-bandas-service-dev.backend-bandas-dev:3001/;
         }
         
         error_page   500 502 503 504  /50x.html;

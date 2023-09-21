@@ -1,6 +1,5 @@
-appName: database
-
 deployment:
     replicaCount: 1
     environment: "stage"
-    tag: 1
+    image:
+       tag: 2
