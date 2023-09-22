@@ -2,4 +2,4 @@ deployment:
     replicaCount: 1
     environment: "prod"
     image:
-       tag: 2
+       tag: 3

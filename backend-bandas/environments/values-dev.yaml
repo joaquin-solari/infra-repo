@@ -3,5 +3,5 @@ deployment:
     replicaCount: 1
     environment: "dev"
     image:
-       tag: 2
+       tag: 3
    
