@@ -2,4 +2,4 @@ deployment:
     replicaCount: 1
     environment: "stage"
     image:
-       tag: 3
+       tag: 4
