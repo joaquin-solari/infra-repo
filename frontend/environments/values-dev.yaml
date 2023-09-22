@@ -6,7 +6,7 @@ deployment:
     environment: "dev"
     host: "app-dev.com"
     image:
-       tag: 20
+       tag: 21
 configmap: 
   nginxConf: |- 
     server {

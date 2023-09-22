@@ -6,8 +6,8 @@ deployment:
     environment: "stage"
     host: "app-stage.com"
     image:
-       tag: 20
-       
+       tag: 21
+
 configmap: 
   nginxConf: |-
     server {

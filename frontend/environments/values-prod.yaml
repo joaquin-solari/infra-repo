@@ -6,7 +6,7 @@ deployment:
     environment: "prod" 
     host: "app-prod.com"
     image:
-       tag: 20
+       tag: 21
 
 configmap: 
   nginxConf: |-
